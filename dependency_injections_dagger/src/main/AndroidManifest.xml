@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.span.tmartincic.dependency_injections_dagger" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ActChainDependency"
+            android:label="@string/title_activity_act_chain_dependency" >
+        </activity>
+        <activity
+            android:name=".ActSubcomponent"
+            android:label="@string/title_activity_act_subcomponent" >
+        </activity>
+        <activity
+            android:name=".ActExtendComp"
+            android:label="@string/title_activity_act_extend_comp" >
+        </activity>
+        <activity
+            android:name=".ActivityEntry"
+            android:label="@string/act_entry" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityBase"
+            android:label="@string/title_activity_activity_base" >
+        </activity>
+        <activity
+            android:name=".ActSingletonNamedObjects"
+            android:label="@string/title_activity_act_singleton_named_objects" >
+        </activity>
+        <activity
+            android:name=".ActSingletonDifferentInstances"
+            android:label="@string/title_activity_act_singleton_different_instances" >
+        </activity>
+    </application>
+
+</manifest>

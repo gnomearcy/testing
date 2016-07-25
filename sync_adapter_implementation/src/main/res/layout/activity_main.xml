@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnShowLocalList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Show local List"/>
+
+        <Button
+            android:id="@+id/btnAddShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Add TV show to local"/>
+
+        <Button
+            android:id="@+id/btnClearLocalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Clear local List"/>
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="Connect"/>
+
+        <Button
+            android:id="@+id/btnShowRemoteList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:padding="10dp"
+            android:text="Show remote List"/>
+
+        <Button
+            android:id="@+id/btnSync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:padding="10dp"
+            android:text="Sync now"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/accountStatus"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:text="Status: Unknown"
+                android:enabled="false"
+                android:padding="10dp"/>
+
+            <CheckBox
+                android:id="@+id/cbIsSyncable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status"
+                android:layout_alignParentRight="true"
+                android:enabled="false"
+                android:text="IsSyncable"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/cbAutoSync"
+                android:layout_below="@id/status"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Auto-sync"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

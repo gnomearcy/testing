@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eu.span.dev.osijek.customviews.sliding_view_from_side.sandwich.test.RelativeLayoutStealer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/fragment_two"/>
+    <include layout="@layout/fragment_one"/>
+
+</eu.span.dev.osijek.customviews.sliding_view_from_side.sandwich.test.RelativeLayoutStealer>

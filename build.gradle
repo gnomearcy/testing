@@ -1,0 +1,105 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "http://files.couchbase.com/maven2/"
+        }
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+        classpath "com.android.databinding:dataBinder:1.0-rc1"
+
+        // For groovying module
+        classpath 'org.codehaus.groovy:gradle-groovy-android-plugin:0.3.5'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven {
+            url "http://files.couchbase.com/maven2/"
+        }
+        jcenter()
+    }
+}
+
+task getDebugKeyStoreData {
+
+    description 'Retrieves the data for the debug keystore'
+    File fileHandle = file('release_signing_information.txt')
+
+    // Ordering:
+    // 1. Store file location
+    // 2. Store password
+    // 3. Key alias
+    // 4. Key password
+
+    List<String> lines = fileHandle.readLines()
+    final String separator = ':';
+
+    // Check valid ordering
+    for(int i = 0; i < 4; i++) {
+        String line = lines.get(i);
+        evaluateLine(line, i, separator);
+    }
+
+    for(int i = 0; i < 4; i++) {
+        def evaluateLine = lines.get(i);
+        def value = evaluateLine.substring(evaluateLine.indexOf(separator) + 1, evaluateLine.length())
+        project.extensions.add(getKeyForIndex(i), value)
+    }
+}
+
+void evaluateLine(String evaluateLine, int index, String separator) {
+    if (!evaluateLine.contains(separator))
+        throw new IllegalStateException(String.format("No \"%s\" character found in \"%s\" line", separator, evaluateLine));
+
+    def value = evaluateLine.substring(evaluateLine.indexOf(separator) + 1, evaluateLine.length())
+    def key = evaluateLine.substring(0, evaluateLine.indexOf(":"))
+    evaluateKey(key, index)
+    evaluateValue(value, index)
+}
+
+void evaluateKey(String key, int index){
+    if(key.isEmpty())
+        throw new IllegalStateException(String.format("Empty key for %d line position", key, index + 1))
+    def wantedKey = getKeyForIndex(index);
+    if(!key.equals(wantedKey))
+        throw new IllegalStateException(String.format("Store file location key is invalid. Expected \"%s\", but got \"%s\"", wantedKey, key));
+}
+
+void evaluateValue(String value, int index){
+    if(value.isEmpty())
+        throw new IllegalStateException(String.format("Empty value for %d line position", value, index + 1))
+}
+
+String getKeyForIndex(int index){
+
+    def storeFileLocation = "storeFileLocation"
+    def storePassword = "storePassword"
+    def keyAlias = "keyAlias"
+    def keyPassword = "keyPassword"
+
+    switch(index)
+    {
+        case 0:
+            return storeFileLocation;
+        case 1:
+            return storePassword;
+        case 2:
+            return keyAlias;
+        case 3:
+            return keyPassword;
+        default:
+            throw new IllegalStateException(String.format("No key specified for %d line number", index + 1))
+    }
+}
+
+
+

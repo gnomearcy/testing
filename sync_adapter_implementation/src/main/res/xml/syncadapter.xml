@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sync-adapter
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:contentAuthority="hr.span.tmartincic.tvshows.provider"
+    android:accountType="hr.span.tmartincic"
+    android:userVisible="true"
+    android:supportsUploading="true"
+    android:allowParallelSyncs="false"
+    android:isAlwaysSyncable="false"/>
+
+            <!--
+            userVisible: if true, sync adapter is visible on the settings window
+                         if syncable=false, the adapter will not be visible
+            isAlwaysSyncable: sets the adapter to be syncable=true by default
+                        for every new account the user adds
+            supportsUploading: starts a sync whenever there is a change to the
+                        content provider
+            -->

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="roomassistant.devosijek.span.eu.test_camera_capture" >
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="take_picture.PhotoIntentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".take_video.VideoIntentActivity"
+            android:label="@string/title_activity_video_intent" >
+        </activity>
+        <activity
+            android:name=".take_video.VideoCropperActivity"
+            android:label="@string/title_activity_video_cropper" >
+        </activity>
+        <activity
+            android:name=".custom_media_recorder.MediaRecorderActivity"
+            android:label="@string/title_activity_media_recorder" >
+
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/title_activity_start" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

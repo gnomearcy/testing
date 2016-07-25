@@ -1,0 +1,4 @@
+storeFileLocation:'../test_release_keystore.jks'
+storePassword:123
+keyAlias:thisIsAnAlias
+keyPassword:cfjc2c

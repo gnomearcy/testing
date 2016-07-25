@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="hr.span.tmartincic"
+    android:icon="@android:drawable/btn_star"
+    android:label="TomoAcc"
+    android:smallIcon="@android:drawable/btn_star"
+    android:accountPreferences="@xml/prefs"/>
+
+    <!--
+    accountType -  unique name of our account type. Other apps need to use
+                    this name if they want to authenticate through this
+                    authenticator
+    accountPreferences - shown when accessing preferences for this account
+                        via settings window.
+
+    -->

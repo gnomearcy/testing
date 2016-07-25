@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Wrap VideoView to achieve stretch -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <VideoView
+            android:id="@+id/videoViewRelative"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </VideoView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <!--  HEADER  -->
+        <RelativeLayout
+            android:id="@+id/cropper_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff3f1d"
+            android:gravity="center"
+            android:paddingBottom="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/cropper_big_title"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="Skratite videozapis"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/cropper_small_title"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:layout_below="@id/cropper_big_title"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Bijelim kliznikom odaberite 15 sekundi videozapisa koji želite priložiti prijavi."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cropper_header"
+            android:layout_above="@+id/cropper_footer">
+            <ImageButton
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_media_play"
+                android:id="@+id/play_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+        </FrameLayout>
+
+        <!--  FOOTER -->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/cropper_footer"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#e5ff48"-->
+            <!--android:layout_alignParentBottom="true">-->
+
+            <!--&lt;!&ndash; Placeholder seek bar  &ndash;&gt;-->
+
+            <!--<ImageView-->
+                <!--android:layout_above="@+id/progress_bar_trim"-->
+                <!--android:id="@+id/cropper_footer_seek_bar_placeholder"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"/>-->
+
+            <!--<ProgressBar-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:id="@+id/progress_bar_trim"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_above="@+id/cropper_footer_separator"/>-->
+
+            <!--<View-->
+                <!--android:id="@+id/cropper_footer_separator"-->
+                <!--android:background="@android:color/white"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="3dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:layout_marginEnd="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_above="@+id/cropper_footer_buttons"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/cropper_footer_buttons"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp">-->
+
+                <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+                <!--<Button-->
+                    <!--android:id="@+id/cancel"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="ODUSTANI"-->
+                    <!--style="?android:attr/buttonBarButtonStyle"-->
+                    <!--android:layout_weight="1"/>-->
+
+                <!--&lt;!&ndash;style="?android:attr/buttonBarButtonStyle"&ndash;&gt;-->
+
+                <!--<View-->
+                    <!--android:background="@android:color/white"-->
+                    <!--android:layout_width="4dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_marginBottom="5dp"/>-->
+                <!--<Button-->
+                    <!--android:id="@+id/confirm"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="SKRATI"-->
+                    <!--style="?android:attr/buttonBarButtonStyle"-->
+                    <!--android:layout_weight="1"/>-->
+            <!--</LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+        <RelativeLayout
+            android:id="@+id/cropper_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e5ff48"
+            android:layout_alignParentBottom="true">
+
+            <!-- Placeholder seek bar  -->
+
+            <ImageView
+                android:id="@+id/cropper_footer_seek_bar_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/holo_green_dark"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar_trim"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/cropper_footer_seek_bar_placeholder"/>
+
+            <View
+                android:id="@+id/cropper_footer_separator"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/progress_bar_trim"/>
+
+            <LinearLayout
+                android:layout_below="@id/cropper_footer_separator"
+                android:id="@+id/cropper_footer_buttons"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <!--android:layout_alignParentBottom="true"-->
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ODUSTANI"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_weight="1"/>
+
+                <!--style="?android:attr/buttonBarButtonStyle"-->
+
+                <View
+                    android:background="@android:color/white"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <Button
+                    android:id="@+id/confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="SKRATI"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

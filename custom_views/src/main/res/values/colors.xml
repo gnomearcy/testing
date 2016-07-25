@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Button - grey -->
+    <color name="button_color_grey_pressed">#7FDDDDDD</color>
+    <color name="button_color_grey_not_pressed">#FFDDDDDD</color>
+
+
+    <color name="button_book_room_text_not_pressed">#ffffffff</color>
+    <color name="button_book_room_text_pressed">#7f00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="white">#ffffff</color>
+</resources>

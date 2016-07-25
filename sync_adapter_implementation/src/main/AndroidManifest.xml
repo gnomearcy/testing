@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="hr.span.tmartincic.implementation.implementation">
+
+    <!-- Authenticator permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+
+    <!-- Sync Adapter permissions -->
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <!-- required to call getIsSyncable() or syncAutomatically() (allows to read sync adapter settings)-->
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <!-- optional - allows us to read the sync state (pending, canceled, idle, syncing) -->
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+
+    <!-- Client permissions -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Service providing the context for sync adapter -->
+        <service
+            android:name=".MySyncAdapterService"
+            android:exported="true"
+            android:process=":sync" >
+            <!-- "process tag" - names a process this component will run in.
+            If the name starts with ":", an application private process is created to run this component in.
+            If the name starts with a lowercase letter, the process is global to the system. -->
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter"
+                       android:resource="@xml/syncadapter"/>
+        </service>
+
+        <!-- Service providing the context for custom authenticator -->
+        <service android:name="hr.span.tmartincic.implementation.MyAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator"
+                       android:resource="@xml/authenticator"/>
+        </service>
+
+        <!-- Custom content provider -->
+        <provider
+            android:authorities="hr.span.tmartincic.tvshows.provider"
+            android:name=".dbscheme.TvShowsContentProvider"
+            android:exported="false"
+            android:label="Tomo Provider"/>
+
+        <!-- Custom authenticator activities -->
+        <activity android:name="hr.span.tmartincic.implementation.AuthActivity" tools:replace="android:label" android:label="Auth screen" />
+        <activity android:name="hr.span.tmartincic.implementation.SignUpAct" tools:replace="android:label" android:label="Sign up screen"/>
+
+    </application>
+
+</manifest>

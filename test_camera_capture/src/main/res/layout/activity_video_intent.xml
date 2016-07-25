@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="roomassistant.devosijek.span.eu.test_camera_capture.take_video.VideoIntentActivity">
+
+    <Button
+        android:id="@+id/capture_video"
+        android:text="Capture video"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_below="@+id/capture_video"
+        android:id="@+id/attack_video"
+        android:text="Attach video"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@id/attack_video"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="Video info"
+        android:background="#ffe77b"
+        android:id="@+id/video_information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <VideoView
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:layout_below="@id/attack_video"
+        android:id="@+id/videopreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--android:background="#ff0000"-->
+
+</RelativeLayout>

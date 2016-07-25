@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+    }
+}
+
+apply plugin: 'java'
+
+dependencies {
+    compile project(':general_processors_api')
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.squareup:javapoet:1.0.0'
+}
+

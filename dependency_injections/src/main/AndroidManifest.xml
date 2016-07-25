@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.span.tmartincic.androidannotations" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".AAMainAct_"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".background_download.BackgroundDownloadAct_"
+            android:label="@string/title_activity_background_download" >
+        </activity>
+        <activity
+            android:name=".fragments.FragmentContainerAct_"
+            android:label="@string/title_activity_fragment_container"
+            android:theme="@style/FragmentContainerActStyle" >
+        </activity>
+        <activity
+            android:name=".list_view.ListViewAct_"
+            android:label="@string/title_activity_list_view" >
+        </activity>
+        <activity
+            android:name=".list_view.StartedActivity_"
+            android:label="@string/title_activity_started" >
+        </activity>
+        <activity
+            android:name=".list_view_aa_style.AAStyleListAct_"
+            android:label="@string/title_activity_aastyle_list" >
+        </activity>
+        <activity
+            android:name="hr.span.tmartincic_.roboguice.FirstRoboGuiceAct"
+            android:label="@string/title_activity_first_robo_guice" >
+        </activity>
+        <activity
+            android:name="hr.span.aa_and_roboguice.AARoboAct_"
+            android:label="@string/title_activity_aarobo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

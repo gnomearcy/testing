@@ -1,0 +1,26 @@
+<eu.span.dev.osijek.customviews.sliding_view_from_side.sandwich.test_dimmed.SandwichLayoutDimmed xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     app:topChild="@layout/testcase2_fragment2"
+     app:bottomChild="@layout/testcase2_fragment1"
+    tools:context="eu.span.dev.osijek.customviews.sliding_view_from_side.TestCase2_DimmedSandwich">
+
+    <FrameLayout
+        android:id="@+id/sandwhichlayout_bottom_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:id="@+id/dimmed_view"
+        android:background="#FF000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/sandwhichlayout_top_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</eu.span.dev.osijek.customviews.sliding_view_from_side.sandwich.test_dimmed.SandwichLayoutDimmed>

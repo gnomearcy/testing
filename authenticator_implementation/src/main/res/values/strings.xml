@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SyncAdapter</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_auth">AuthActivity</string>
+    <string name="title_activity_authenticator">AuthenticatorAct</string>
+    <string name="title_activity_sign_up">SignUpAct</string>
+</resources>

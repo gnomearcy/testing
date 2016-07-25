@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.span.tmartincic.roomassistant.test">
+
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="19" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="hr.span.tmartincic.roomassistant"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for hr.span.tmartincic.roomassistant"/>
+</manifest>

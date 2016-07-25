@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ExWebServ</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_soap">SOAP</string>
+    <string name="title_activity_span_exchange">SpanExchange</string>
+    <string name="title_activity_find_item">FindItemAct</string>
+    <string name="title_activity_testingksoap_ntlmtransport">TestingksoapNTLMtransport</string>
+    <string name="title_activity_test_jcifs_connection">TestJcifsConnection</string>
+    <string name="title_activity_w3c_request">w3cRequest</string>
+    <string name="title_activity_test_prepravka">TestPrepravka</string>
+</resources>

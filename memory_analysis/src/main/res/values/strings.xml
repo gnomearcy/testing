@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MemoryAnalysis</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_act_two">ActTwo</string>
+    <string name="title_activity_act_three">ActThree</string>
+    <string name="title_activity_act_four">ActFour</string>
+    <string name="title_activity_act_five">ActFive</string>
+    <string name="title_activity_act_six">ActSix</string>
+</resources>

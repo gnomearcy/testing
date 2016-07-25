@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/tmartincic/AndroidStudioProjects/Testing/account_authenticator_base/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">AccountAuthenticator</string>
+    <string name="label">Udinic</string>
+    <string name="login_label">Log in</string>
+    <string name="signup_title">Create new account</string>
+</resources>

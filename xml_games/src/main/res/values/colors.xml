@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dialog_content_background_notap">#ffffff</color>
+    <color name="dialog_content_background_tap">#2196f3</color>
+    <color name="dialog_action_notap">#4d4d4d</color>
+    <color name="dialog_action_tap">#ffffff</color>
+</resources>

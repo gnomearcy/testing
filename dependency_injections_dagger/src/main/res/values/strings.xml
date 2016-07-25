@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="app_name">DI test</string>
+    <string name="act_chain_dependency">Chain dependency</string>
+    <string name="act_subcomponent">Subcomponents</string>
+    <string name="act_extend_component">Extend component</string>
+    <string name="act_entry">Choose your case:</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_act_chain_dependency">ActChainDependency</string>
+    <string name="title_activity_act_subcomponent">ActSubcomponent</string>
+    <string name="title_activity_act_extend_comp">ActExtendComp</string>
+    <string name="title_activity_activity_base">ActivityBase</string>
+    <string name="title_activity_act_singleton_named_objects">ActSingletonNamedObjects</string>
+    <string name="title_activity_act_singleton_different_instances">ActSingletonDifferentInstances
+    </string>
+
+    <!-- example 1 -->
+    <string name="endpoint">https://api.github.com</string>
+    <string name="title_activity_test_di">Activity TestDi</string>
+    <string name="title_activity_activity_component_dependency2">Activity dependency 2</string>
+    <string name="title_activity_repositories_list">RepositoriesListActivity</string>
+    <string name="title_activity_activity_splash">ActivitySplash</string>
+    <string name="title_activity_activity_repository_details">ActivityRepositoryDetails</string>
+
+    <!-- example 2 -->
+    <string name="submit">Submit</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="title_activity_activity_login">ActivityLogin</string>
+    <string name="title_activity_activity_launcher">ActivityLauncher</string>
+    <string name="title_activity_activity_mortar">ActivityMortar</string>
+    <string name="title_activity_activity_jokes">ActivityJokes</string>
+    <string name="title_activity_activity_category">ActivityCategory</string>
+
+    <!-- example 3 -->
+</resources>

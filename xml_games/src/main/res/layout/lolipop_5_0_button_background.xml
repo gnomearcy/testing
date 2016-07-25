@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#993399"
+    android:layout_margin="30dp"
+    android:padding="30dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dialog_action_colors"
+        android:text="U REDU"
+        android:id="@+id/button"
+        android:background="@drawable/statelistbackground"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dialog_action_colors"
+        android:text="ODUSTANI"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/button"
+        android:background="@drawable/statelistbackground"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/button2"
+        android:background="@drawable/circle_white"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.span.tmartincic.implementation" >
+
+    <!-- *** Not really needed here, but convenient for copying to other apps that will use this module *** -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".AuthActivity"
+            android:label="@string/title_activity_auth" >
+        </activity>
+        <activity
+            android:name=".SignUpAct"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+
+        <service android:name=".MyAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator"
+                       android:resource="@xml/authenticator"/>
+        </service>
+    </application>
+
+</manifest>

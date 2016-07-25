@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">dependency_injection_roboguice</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="someText">sometext</string>
+    <string name="title_activity_aarobo">AARoboAct</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eu.span.dev.osijek.customviews.sliding_view_from_side.sandwich.test.RelativeLayoutStealer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <eu.span.dev.osijek.customviews.sliding_view_from_side.sandwich.test.ButtonStealer
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="button"
+        android:layout_centerHorizontal="true"/>
+
+</eu.span.dev.osijek.customviews.sliding_view_from_side.sandwich.test.RelativeLayoutStealer>

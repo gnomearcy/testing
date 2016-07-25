@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.span.tmartincic.ews" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".EWSDemo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SOAP"
+            android:label="@string/title_activity_soap" >
+        </activity>
+        <activity
+            android:name=".SpanExchange"
+            android:label="@string/title_activity_span_exchange" >
+        </activity>
+        <activity
+            android:name=".FindItemAct"
+            android:label="@string/title_activity_find_item" >
+        </activity>
+        <activity
+            android:name=".TestingksoapNTLMtransport"
+            android:label="@string/title_activity_testingksoap_ntlmtransport" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".jcifs_konekcija.TestJcifsConnection"
+            android:label="@string/title_activity_test_jcifs_connection" >
+        </activity>
+        <activity
+            android:name=".w3cschools.w3cRequest"
+            android:label="@string/title_activity_w3c_request" >
+        </activity>
+        <activity
+            android:name=".prepravljanje_ksoap2.TestPrepravka"
+            android:label="@string/title_activity_test_prepravka" >
+        </activity>
+    </application>
+</manifest>

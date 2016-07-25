@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="hr.span.tmartincic.testing.esspresso.adapterview.ActivityAdapterView">
+    <item android:id="@+id/how_many_left_in_list"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          android:icon="@android:drawable/btn_star"
+          android:showAsAction="always"/>
+</menu>

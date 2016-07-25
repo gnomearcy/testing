@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SandwichLayout">
+        <attr name="bottomChild" format="reference"/>
+        <attr name="topChild" format="reference" />
+        <attr name="android:layout_width" />
+        <attr name="android:layout_height" />
+    </declare-styleable>
+</resources>

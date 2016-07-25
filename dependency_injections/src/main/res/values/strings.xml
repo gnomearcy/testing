@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">androidannotations</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_background_download">BackgroundDownloadAct</string>
+    <string name="title_activity_fragment_container">FragmentContainerAct</string>
+    <string name="title_activity_list_view">ListViewAct</string>
+    <string name="title_activity_started">StartedActivity</string>
+    <string name="title_activity_aastyle_list">AAStyleListAct</string>
+    <string name="someText">bleradsgvasdg</string>
+    <string-array name="names">
+        <item>tomo</item>
+        <item>pero</item>
+        <item>duro</item>
+        <item>damir</item>
+    </string-array>
+    <string-array name="lastnames">
+        <item>tomic</item>
+        <item>peric</item>
+        <item>duric</item>
+        <item>X</item>
+    </string-array>
+    <string name="title_activity_first_robo_guice">FirstRoboGuiceAct</string>
+    <string name="title_activity_aarobo">AARoboAct</string>
+</resources>
+

@@ -1,0 +1,30 @@
+include ':proguard_rules_testing'
+//include ':custom_views'
+//include ':pizza_api', ':pizza_processor', ':pizza_demo', ':couch_database', ':couchdblite_gcm_sync', ':TodoList'
+//include ':couchdblite_gcm_sync', ':custom_couch_sync'
+//include ':exchange_web_service_demo'
+
+//include ':testing_espresso', ':authenticator_implementation', ':authenticator_app_example', ':sync_adapter_implementation', ':exchange_web_service_demo', ':dependency_injection_butterknife', ':room_assistant', ':test_camera_capture'
+//include ':test_camera_capture'
+//include ':room_assistant'
+//include ':memory_analysis'
+//include ':databinding', ':xml_games', ':cookie_store_custom', ':eu.span.devosijek.generics'
+//include ':eu.span.devosijek.generics', ':general_processors'
+//include ':general_processors', ':general_processors_api', ':general_processors_sample', ':pizza_api', ':pizza_demo', 'pizza_processor'
+//include ':general_processors', ':general_processors_api', ':general_processors_sample', ':all_sort_of_stuff'
+
+/** Test application (app -> call service -> uninstall app) for RoomAssistant project */
+//include ':updater_demo_app', ':updater_impl'
+
+//include ':all_sort_of_stuff', ':smali'
+
+/** Sliding window for RoomAssistant project */
+//include ':custom_views', ':viewserver', ':memory_analysis', ':zbar_scanner'
+//include ':groovying'
+//include ':support_library_tests'
+
+//include ':test_camera_capture'
+
+//include ':dependency_injections_dagger'
+
+

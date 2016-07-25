@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eu.span.dev.osijek.customviews" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".sliding_view_from_side.TestCase1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".sliding_view_from_side.TestCase2_DimmedSandwich"
+            android:label="@string/title_activity_test_case2__dimmed_sandwich"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sliding_view_from_side.progress_bar_custom.ActivityProgressBarCustom"
+            android:label="@string/title_activity_activity_progress_bar_custom" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+    </application>
+</manifest>

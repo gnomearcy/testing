@@ -1,0 +1,22 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+    }
+}
+
+apply plugin: 'java'
+
+dependencies {
+    compile project(':annotation_api')
+}
+
+sourceSets{
+    main{
+        java{
+            srcDirs = ["src/main/java", "../annotation_api/src/main/java"]
+        }
+    }
+}
